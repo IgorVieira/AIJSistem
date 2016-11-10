@@ -1,0 +1,20 @@
+.container {
+  line-height: 1.5em;
+  font-size: 1em;
+  padding: 40px;
+  width: 75%;
+  margin: 0 auto; }
+
+.btn {
+  display: inline-block;
+  background-color: #2C3D51;
+  color: #cccccc;
+  padding: 10px 20px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  border: 0px; }
+
+.btn-github {
+  margin-right: 3rem; }

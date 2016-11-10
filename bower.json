@@ -1,0 +1,21 @@
+{
+  "name": "aijsystem",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Igor Vieira <igorpereiraramosvieira@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gallery": "gallery-css#^1.0.2"
+  }
+}
