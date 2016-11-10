@@ -1,15 +1,34 @@
 <?php
  get_header();
 ?>
-
+<?php
+     $home = get_template_directory_uri();
+     ?>
+<!--
 <header id="page0">
 		
 		<h1>AIJ System</h1>
 		
 
-	</header>
+	</header>-->
 
-   
+<div class="slides">
+	<img src="<?= $home ?>/assets/dist/images/slide1.png" id="slideshow">
+
+
+	<div id="caption">
+		Caption for slide
+	</div>
+
+	<a href="#" onclick="changeImage(-1); return false">Previus Slide</a>
+	<a href="#" onclick="changeImage(1); return false">Next Slide</a>
+
+</div>
+
+
+
+
+
 <div class="container">
 	<ul class="flex-container">
 		  <li class="flex-item">
