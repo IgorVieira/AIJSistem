@@ -10,7 +10,13 @@
 	</header>
 
    
-  
+<div class="container">
+	<ul class="flex-container">
+		  <li class="flex-item"></li>
+		  <li class="flex-item"></li>
+		  <li class="flex-item"></li>
+	</ul>		  
+</div>  
 
 
 

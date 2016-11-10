@@ -3,6 +3,7 @@
 ?>
 
 <footer class="footer-component">
+	<a href="" class="topo"><i class="fa fa-arrow-up fa-2x"></i></a>
 	<ul class="footer-item">
 		<li class="footer-title">AIJ Sistem</li>
 		<li class="copy">© 2016 AIJ Sistem - Todos os direitos reservados</li>

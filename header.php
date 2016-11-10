@@ -17,7 +17,9 @@
      ?>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="<?= $home ?>/assets/dist/compress-sass/main.css">
-	<script src="<?= $home ?>/assets/js/menu-button.js"></script>
+	<script src="<?= $home ?>/assets/dist/compress-js/menu-button.js"></script>
+    <script src="<?= $home ?>/assets/dist/compress-js/upbutton.js"></script>
+    
 
 
 	<?php

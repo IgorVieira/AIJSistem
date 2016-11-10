@@ -114,3 +114,22 @@ li .social-cube{
 		padding: -1em;
 	}
 }
+
+
+.topo {
+  cursor: pointer;
+  position: fixed;
+  bottom: 3.5em;
+  right: 3.5em;
+  display: none;
+  z-index: 50;
+  background: rgba(0,0,0,0.6);
+  border-color: $whitecolor;
+  border-radius: 2px solid;
+  color: $whitecolor;
+  padding: 1em 2rem;
+
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
