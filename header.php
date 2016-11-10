@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/6955255fc8.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
     
     <title>
         AIJ Sistem
@@ -35,6 +37,11 @@
    ?>
 
    <div class="handle">
-        Menu
+       <div id="nav-icon3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
    </div>
 </nav>

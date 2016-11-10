@@ -5,4 +5,8 @@ $(document).ready(function(){
 	$("a").click(function(){
         $('.showing').toggleClass();
     });
+
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+	});
 });
