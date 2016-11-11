@@ -31,7 +31,7 @@
 <body>
   <nav class="navbar">
       <li class="logo">
-        <a href="/site/index.php"><img src="<?= $home ?>/assets/dist/images/logo-aijsistem-pequeno.jpg" alt=""></a>
+        <a href="http://aijsistem.com.br"><img src="<?= $home ?>/assets/dist/images/logo-aijsistem-pequeno.jpg" alt=""></a>
       </li>
    <?php 
     $args = array(
