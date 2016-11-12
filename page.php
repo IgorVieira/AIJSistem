@@ -25,7 +25,7 @@
             <div class="container">
                 <div class="flex-container">
                     <div class="flex-boxcontact">
-                         <form action="">
+                         <form method="post">
                             <label for="">Nome</label><br>
                             <input type="text" required="true">
                             <br>
