@@ -43,7 +43,7 @@ if($formularioEnviado) {
             <div class="container">
                 <div class="flex-container">
                     <div class="flex-boxcontact">
-                         <form action="">
+                         <form method="post">
                             <label for="">Nome</label><br>
                             <input id="form-nome" type="text" placeholder="Seu nome aqui" name="form-nome">
                             <br>
