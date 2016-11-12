@@ -1,5 +1,23 @@
 <?php
     get_header();
+
+
+$nome = $_POST['form-nome'];
+$email = $_POST['form-email'];
+$fone  = $_POST['form-fone'];
+$mensagem = $_POST['form-mensagem'];
+
+$formularioEnviado = isset($nome) && isset($email) && isset($mensagem) && isset($fone);
+
+if($formularioEnviado) {
+	$enviou = enviar_e_checar_email($nome, $email, $mensagem, $fone);
+
+	if($enviou) { ?>
+		<span class="email-sucesso">Seu e-mail foi enviado com sucesso!</span>
+	<?php } else { ?>
+		<span class="email-fracasso">Desculpe, ocorreu um erro, seu e-mail não foi enviado!</span>
+	<?php } 
+}
 ?>
 
 
@@ -27,17 +45,17 @@
                     <div class="flex-boxcontact">
                          <form action="">
                             <label for="">Nome</label><br>
-                            <input type="text" required="true">
+                            <input id="form-nome" type="text" placeholder="Seu nome aqui" name="form-nome">
                             <br>
                             <label for="">Email</label><br>
-                            <input type="email" required="true">
+                            <input id="form-email" type="email" placeholder="email@exemplo.com.br" name="form-email">
                             <br>
                             <br>
                             <label for="">Telefone</label><br>
-                            <input type="text" required="true">
+                            <input id="form-fone" type="text" placeholder="Seu numero aqui" name="form-fone">
                             <br>
                             <label for="">Comentário</label><br>
-                            <textarea name="" id="" cols="30" rows="10"></textarea><br>
+                            <textarea id="form-mensagem" name="form-mensagem"></textarea><br>
                             <input type="submit" class="btn" value="Enviar">
                          </form>  
                     </div>
