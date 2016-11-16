@@ -8,17 +8,31 @@ $fone  = $_POST['form-fone'];
 $mensagem = $_POST['form-mensagem'];
 
 $formularioEnviado = isset($nome) && isset($email) && isset($mensagem) && isset($fone);
-
 if($formularioEnviado) {
-	$enviou = enviar_e_checar_email($nome, $email, $mensagem, $fone);
+    $enviou = enviar_e_checar_email($nome, $email, $mensagem, $fone);
+   if($enviou) { ?>
+        <script>
+           swal({
+            title: "Enviado!",
+            text: "Mensagem Enviada com sucesso!",
+             confirmButtonText: "Fechar"
+            });
 
-	if($enviou) { ?>
-		<span class="email-sucesso">Seu e-mail foi enviado com sucesso!</span>
-	<?php } else { ?>
-		<span class="email-fracasso">Desculpe, ocorreu um erro, seu e-mail não foi enviado!</span>
-	<?php } 
+        </script>
+    <?php } else { ?>
+        <script>
+            swal({
+                title: "Error!",
+                text: "Erro de envio!",
+                type: "error",
+                confirmButtonText: "Fechar"
+                });
+        </script>
+    <?php } 
 }
 ?>
+
+
 
 
   
@@ -45,14 +59,14 @@ if($formularioEnviado) {
                     <div class="flex-boxcontact">
                          <form method="post">
                             <label for="">Nome</label><br>
-                            <input id="form-nome" type="text" placeholder="Seu nome aqui" name="form-nome">
+                            <input id="form-nome" type="text" placeholder="Seu nome aqui" name="form-nome" required="true">
                             <br>
                             <label for="">Email</label><br>
-                            <input id="form-email" type="email" placeholder="email@exemplo.com.br" name="form-email">
+                            <input id="form-email" type="email" placeholder="email@exemplo.com.br" name="form-email" required="true">
                             <br>
                             <br>
                             <label for="">Telefone</label><br>
-                            <input id="form-fone" type="text" placeholder="Seu numero aqui" name="form-fone">
+                            <input id="form-fone" type="text" placeholder="Seu numero aqui" name="form-fone" required="true">
                             <br>
                             <label for="">Comentário</label><br>
                             <textarea id="form-mensagem" name="form-mensagem"></textarea><br>
